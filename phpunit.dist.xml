@@ -20,7 +20,7 @@
 
     <testsuites>
         <testsuite name="Project Test Suite">
-            <directory>custom/plugins/MinQuantityWarning/Tests/</directory>
+            <directory>./custom/plugins/MinQuantityWarning/src/Tests</directory>
         </testsuite>
     </testsuites>
 
