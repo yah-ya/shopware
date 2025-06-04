@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  shopware:
+    image: dockware/dev:latest
+    container_name: shopware
+    ports:
+      - "8000:80"
+    volumes:
+      - .:/var/www/html
+    environment:
+      - APP_ENV=dev
+      - XDEBUG_ENABLED=1
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  mysql:
+    image: mysql:8.0
+    container_name: shopware-db
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: shopware
+      MYSQL_USER: shopware
+      MYSQL_PASSWORD: shopware
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
