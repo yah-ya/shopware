@@ -1,0 +1,7 @@
+{
+    "MinQuantityWarning": {
+        "storefront": {
+            "warning": "Minimum order quantity is %minQuantity% items"
+        }
+    }
+} 

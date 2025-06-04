@@ -1,0 +1,9 @@
+{
+    "entry": {
+        "min-quantity-warning": {
+            "js": [
+                "src/main.js"
+            ]
+        }
+    }
+} 

@@ -1,19 +1,22 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
     <card>
-        <title>Minimum Order Quantity Warning</title>
-        <input-field>
-            <name>active</name>
-            <label>Enable Minimum Quantity Warning</label>
-            <type>bool</type>
-            <defaultValue>true</defaultValue>
+        <title>Minimum Quantity Warning</title>
+        <title lang="de-DE">Mindestmengenwarnung</title>
+
+        <input-field type="int">
+            <name>minQuantity</name>
+            <label>Minimum Quantity</label>
+            <label lang="de-DE">Mindestmenge</label>
+            <defaultValue>5</defaultValue>
         </input-field>
-        <input-field>
-            <name>number</name>
-            <label>Minimum Quantity Threshold</label>
-            <type>int</type>
-            <defaultValue>3</defaultValue>
+
+        <input-field type="bool">
+            <name>enabled</name>
+            <label>Enable Warning</label>
+            <label lang="de-DE">Warnung aktivieren</label>
+            <defaultValue>true</defaultValue>
         </input-field>
     </card>
 </config>

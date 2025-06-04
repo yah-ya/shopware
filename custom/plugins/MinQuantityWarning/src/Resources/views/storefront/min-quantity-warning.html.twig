@@ -1,0 +1,5 @@
+{% if showWarning %}
+    <div class="min-quantity-warning alert alert-warning">
+        {{ "MinQuantityWarning.storefront.warning"|trans({'%minQuantity%': minQuantity}) }}
+    </div>
+{% endif %} 

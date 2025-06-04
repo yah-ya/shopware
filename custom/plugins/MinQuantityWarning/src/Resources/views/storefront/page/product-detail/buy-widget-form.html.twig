@@ -1,0 +1,6 @@
+{% sw_extends '@Storefront/page/product-detail/buy-widget-form.html.twig' %}
+
+{% block page_product_detail_buy_form %}
+    <div class="min-quantity-warning-container" data-min-quantity-warning="true" data-product-id="{{ page.product.id }}"></div>
+    {{ parent() }}
+{% endblock %} 

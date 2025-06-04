@@ -1,0 +1,20 @@
+{
+    "name": "MinQuantityWarning",
+    "author": "Yahya",
+    "views": [
+        "@Storefront",
+        "@Plugins"
+    ],
+    "style": [
+        "@Storefront",
+        "app/storefront/src/scss/base.scss"
+    ],
+    "script": [
+        "@Storefront",
+        "app/storefront/src/main.js"
+    ],
+    "asset": [
+        "@Storefront",
+        "app/storefront/src/asset"
+    ]
+} 
