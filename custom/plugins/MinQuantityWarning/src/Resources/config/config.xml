@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+    <card>
+        <title>Minimum Order Quantity Warning</title>
+        <input-field>
+            <name>active</name>
+            <label>Enable Minimum Quantity Warning</label>
+            <type>bool</type>
+            <defaultValue>true</defaultValue>
+        </input-field>
+        <input-field>
+            <name>number</name>
+            <label>Minimum Quantity Threshold</label>
+            <type>int</type>
+            <defaultValue>3</defaultValue>
+        </input-field>
+    </card>
+</config>
