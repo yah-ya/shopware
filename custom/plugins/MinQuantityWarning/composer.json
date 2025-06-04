@@ -1,0 +1,21 @@
+{
+    "name": "yahya-extensions/min-quantity-warning",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "description": "Warn users if quantity is below minimum threshold",
+    "autoload": {
+      "psr-4": {
+        "MinQuantityWarning\\": "src/"
+      }
+    },
+    "extra": {
+      "shopware-plugin-class": "MinQuantityWarning\\MinQuantityWarning",
+      "label": {
+        "en-GB": "Minimum Quantity Warning"
+      }
+    },
+    "require": {
+      "shopware/core": "*"
+    }
+  }
+  
